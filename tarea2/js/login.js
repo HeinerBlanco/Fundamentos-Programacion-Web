@@ -53,7 +53,7 @@ function login() {
                 html: '<iframe src="https://lottie.host/embed/89a73ed8-872f-43f4-a326-99b1331fda5d/ln7MeY0rQo.json"></iframe> <br><br><p>Conectando.... </p>',
 
             }).then(() => {
-                window.location.href = "http://127.0.0.1:5501/landing.html", "blank";
+                window.location.href = "landing.html", "blank";
             });
         } else {
             text = "Usuario o contraseña incorrecta.";
