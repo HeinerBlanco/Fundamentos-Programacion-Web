@@ -1,0 +1,29 @@
+
+#Sabia{
+    font-size: 45px;
+
+}
+
+
+#imagen{
+    width: 50%;
+    height: 50%;
+    margin-top: 10%;
+}
+
+.container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#mostrarBtn, #limpiar{
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+}
+#yeti{
+    width: 100%;
+    height: 80%;
+}

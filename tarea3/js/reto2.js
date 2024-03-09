@@ -11,7 +11,21 @@
             var precio = document.getElementById("precio").value;
 
             if (cliente === "" || articulo === "" || cantidad === "" || precio === "") {
-                alert("Campos vacíos, intentar de nuevo por favor.");
+            
+                Swal.fire({
+
+                    
+                    title: 'Oops... Faltan datos',
+                    confirmButtonText: "Intentar de nuevo",
+                    html: ' <iframe src="https://lottie.host/embed/35036655-3061-46cd-bf2d-4e9bccefb40a/KcQ9a6dQnV.json"></iframe><br>"Todos los campos son obligatorios"',
+
+        
+
+                });
+            
+
+
+            
             } else {
                 var subTotal = cantidad * precio;
                 sumasubTotal += subTotal;
@@ -63,3 +77,5 @@
 
             return out;
         }
+
+        

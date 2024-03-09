@@ -45,11 +45,6 @@ button {
     font-size: 15px;
 }
 
-#inactivo{
-    color:black;
-    font-weight: bold;
-
-}
 #inactivo:hover{
     color: #e80b0b;
     cursor: pointer;

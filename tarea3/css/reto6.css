@@ -1,0 +1,16 @@
+.banner{
+background-image: url(../imagenes/yeti/banneroficial.avif);
+background-size: cover;
+background-position: center;
+height: 50vh;
+
+
+}
+
+#imagen{
+    width: 30%;
+    height: 30%;
+    object-fit: cover;
+    margin-bottom: 10%;
+    margin-top: 5%;
+}

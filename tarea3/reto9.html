@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reto #9</title>
+  <!-- Agrega los estilos de SweetAlert y Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="css/reto9.css">
+</head>
+<body>
+  <h1 class="display-4 pt-5 text-center">Encuesta de Satisfacción <br>Servicio al Cliente</h1>
+  <section class="container-fluid1">
+    <h2 class="mt-5 col-6 text-center">¿Cuál de estas marcas has comprado recientemente?</h2>
+    <div class="col-6">
+    <div class="form-check pt-3">
+      <input class="form-check-input" type="checkbox" value="Razer" id="checkRazer">
+      <label class="form-check-label" for="checkRazer">Razer</label>
+    </div>
+    <div class="form-check pt-3">
+      <input class="form-check-input" type="checkbox" value="Logitech" id="checkLogitech">
+      <label class="form-check-label" for="checkLogitech">Logitech</label>
+    </div>
+</div>
+  </section>
+
+  <section class="cajaEncuesta">
+    <form id="encuesta">
+      <!-- Preguntas de la encuesta -->
+      <div id="preguntas" class="pt-4">
+        <legend>Encuesta de Satisfacción</legend>
+        <div id="pregunta1">
+          <legend>1. ¿Cómo calificaría la calidad del servicio recibido?</legend>
+          <input type="radio" id="pregunta1_malo" value="1" name="pregunta1">
+          <label for="pregunta1_malo">Malo</label>
+          <!-- Agrega las otras opciones de respuesta aquí -->
+          <input type="radio" id="pregunta1_regular" value="2" name="pregunta1">
+          <label for="pregunta1_regular">Regular</label>
+          <input type="radio" id="pregunta1_bueno" value="3" name="pregunta1">
+          <label for="pregunta1_bueno">Bueno</label>
+          <input type="radio" id="pregunta1_muy_bueno" value="4" name="pregunta1">
+          <label for="pregunta1_muy_bueno">Muy bueno</label>
+          <input type="radio" id="pregunta1_excelente" value="5" name="pregunta1">
+          <label for="pregunta1_excelente">Excelente</label>
+        </div>
+        <!-- Repite el formato para las demás preguntas -->
+        <div id="pregunta2">
+          <legend>2. ¿La atención recibida fue amable y cortés?</legend>
+          <input type="radio" id="pregunta2_malo" value="1" name="pregunta2">
+          <label for="pregunta2_malo">Malo</label>
+          <!-- Agrega las otras opciones de respuesta aquí -->
+          <input type="radio" id="pregunta2_regular" value="2" name="pregunta2">
+          <label for="pregunta2_regular">Regular</label>
+          <input type="radio" id="pregunta2_bueno" value="3" name="pregunta2">
+          <label for="pregunta2_bueno">Bueno</label>
+          <input type="radio" id="pregunta2_muy_bueno" value="4" name="pregunta2">
+          <label for="pregunta2_muy_bueno">Muy bueno</label>
+          <input type="radio" id="pregunta2_excelente" value="5" name="pregunta2">
+          <label for="pregunta2_excelente">Excelente</label>
+        </div>
+        <div id="pregunta3">
+          <legend>3. ¿Se resolvieron sus dudas de manera satisfactoria?</legend>
+          <input type="radio" id="pregunta3_malo" value="1" name="pregunta3">
+          <label for="pregunta3_malo">Malo</label>
+          <!-- Agrega las otras opciones de respuesta aquí -->
+          <input type="radio" id="pregunta3_regular" value="2" name="pregunta3">
+          <label for="pregunta3_regular">Regular</label>
+          <input type="radio" id="pregunta3_bueno" value="3" name="pregunta3">
+          <label for="pregunta3_bueno">Bueno</label>
+          <input type="radio" id="pregunta3_muy_bueno" value="4" name="pregunta3">
+          <label for="pregunta3_muy_bueno">Muy bueno</label>
+          <input type="radio" id="pregunta3_excelente" value="5" name="pregunta3">
+          <label for="pregunta3_excelente">Excelente</label>
+        </div>
+      </div>
+
+      <!-- Botones para ver resultado y limpiar -->
+      <div class="pt-5">
+        <button type="button" class="btn btn-success" id="btnVerResultado">Ver Resultado</button>
+        <button type="button" class="btn btn-warning ml-3" id="btnLimpiar">Limpiar</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- Agrega el script personalizado -->
+  <script src="js/reto9.js"></script>
+</body>
+</html>
