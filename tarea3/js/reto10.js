@@ -1,8 +1,9 @@
 'use strict';
-
+// Función para buscar productos
 function buscarProducto() {
     let searchInput = document.getElementById("inputBuscar").value.toLowerCase();
 
+    // Base de datos de productos
     let productos = {
         "teclado": [
             { nombre: "Teclado Razer", descripcion: "Teclado mecánico para gaming", precio: "$100", imagen: "imagenes/reto10/tecladorazer.jpg" },
@@ -31,9 +32,12 @@ function buscarProducto() {
         ]
     };
 
+    // Muestra los resultados en la página
     let resultadosContainer = document.getElementById("resultados");
+    // Limpiamos el contenedor de resultados
     resultadosContainer.innerHTML = "";
 
+    // Si no se encuentra el producto, muestra un mensaje de error con SweetAlert
     if (!productos.hasOwnProperty(searchInput)) {
         Swal.fire({
             icon: "error",
@@ -45,11 +49,14 @@ function buscarProducto() {
         return;
     }
 
+    // Muestra los productos en pantalla
     let resultados = productos[searchInput];
     for (let i = 0; i < resultados.length && i < 3; i++) {
         let producto = resultados[i];
+
+        // Creamos un card con la información del producto
         let card = `
-            <div class="col-sm-12 col-md-4 col-lg-4 mx-3">
+            <div class="col-sm-12 col-md-3 col-lg-3 mx-3">
                 <div id="fondofotos" class="card text-center ">
                     <img id="fotos" src="${producto.imagen}" class="img-fluid" alt="${producto.nombre}">
                     <div class="card-body ">
@@ -59,6 +66,8 @@ function buscarProducto() {
                     </div>
                 </div>
             </div>`;
+
+        // Agregamos los card con el += para que no se sobreescriban
         resultadosContainer.innerHTML += card;
     }
 }

@@ -1,5 +1,7 @@
+
 // evento que carga la función automáticamente...
 window.onload = function() {
+    
     // con esto carga el logo principal
     document.getElementById("portada").innerHTML = "<img src='imagenes/portadas/buscandoLibro.jpg' class='img-fluid'/>";
 
@@ -8,9 +10,11 @@ window.onload = function() {
 
         // variable que guarda el valor del select
         let n = e.target.value;
-        // expresiones que guardan las imágenes de los estadios y la información de cada uno...
+
+        // expresiones que guardan las imágenes de los libros
         let imagen = "<img src='imagenes/portadas/buscandoLibro.jpg" + n + ".jpg' class='img-fluid'/>";
 
+        // expresiones que guardan los textos informativos de los libros
         if (n === "La Cabaña") {
             imagen = "<img src='imagenes/portadas/la_cabana.webp' class='img-fluid' alt='logo'/>";
             titulo = "<h5 class=text-info>TITULO</h5><p>La Cabaña</p>";
@@ -41,10 +45,7 @@ window.onload = function() {
 
         }
 
-
-
-
-
+        // imprime la imagen y los textos informativos en el HTML
         document.getElementById("portada").innerHTML = imagen;
         document.getElementById("titulo").innerHTML = titulo;
         document.getElementById("autor").innerHTML = autor;
@@ -55,11 +56,3 @@ window.onload = function() {
 }
 
 
-// función del botón Reiniciar
-document.getElementById("btn-clean").onclick = function() {
-    document.getElementById("output-img").innerHTML = "<img src='img/logo.png' class='img-fluid' alt='logo'/>";
-    // limpia los textos informativos de los estadios...
-    document.getElementById("output-txt").innerHTML = "";
-    // deja el select con el texto por defecto...
-    document.getElementById("stadium").value = "";
-};

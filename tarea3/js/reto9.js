@@ -58,6 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
   
     // Event listener para el botón "Limpiar"
     document.getElementById('btnLimpiar').addEventListener('click', function () {
+
       // Reinicia todas las respuestas y la marca elegida
       marcaElegida = '';
       respuestas = [];
@@ -77,10 +78,13 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
   
+
     // Event listener para los radio buttons de las preguntas
     document.querySelectorAll('input[type="radio"]').forEach(radio => {
       radio.addEventListener('change', function () {
-        // Guarda las respuestas de las preguntas
+
+
+        // almacena el valor de un elemento HTML en una posición específica de un array llamado respuestas. La posición en la que se almacena este valor se determina según el último dígito del nombre del elemento HTML.
         respuestas[parseInt(this.name.slice(-1)) - 1] = this.value;
       });
     });

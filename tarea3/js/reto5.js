@@ -46,7 +46,7 @@ function mostrarImagen(estilo) {
 }
 
 function mostrarTamano(estilo, tamano) {
-    // variable que guarda la imagen según el estilo seleccionado
+    // variable que guarda la imagen según el estilo y tamaño seleccionado
     let imagenDireccion = "imagenes/yeti/" + estilo.toLowerCase() + ".png";
 
     // Muestra el mensaje utilizando SweetAlert
@@ -55,7 +55,7 @@ function mostrarTamano(estilo, tamano) {
         html: "<p> Yeti para  " + estilo + " de " + tamano + "<br><br> <strong> Precio :</strong></p> $" + obtInfo(estilo, tamano).toFixed(2),     
     });
 }
-
+    // función que obtiene el precio según el estilo y tamaño seleccionado
 function obtInfo(estilo, tamano) {
     var precio;
 
@@ -114,6 +114,6 @@ function limpiar() {
     var selectTamano = document.getElementById('tamano');
     selectTamano.selectedIndex = 0;
 
-    // Restablece la imagen
+    // Restablece la imagen por defecto
     document.getElementById('imagen').src = "imagenes/yeti/variasyeti2-removebg-preview.png";  
 }
