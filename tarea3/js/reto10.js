@@ -49,11 +49,11 @@ function buscarProducto() {
     for (let i = 0; i < resultados.length && i < 3; i++) {
         let producto = resultados[i];
         let card = `
-            <div class="col-md-4 d-flex justify-content-center">
-                <div id="fondofotos" class="card text-center d-flex align-items-center justify-content-center">
+            <div class="col-sm-12 col-md-4 col-lg-4 mx-3">
+                <div id="fondofotos" class="card text-center ">
                     <img id="fotos" src="${producto.imagen}" class="img-fluid" alt="${producto.nombre}">
-                    <div class="card-body d-flex flex-column justify-content-end">
-                        <h2 class="card-title text-center">${producto.nombre}</h2>
+                    <div class="card-body ">
+                        <h2 class="card-title ">${producto.nombre}</h2>
                         <p class="card-text">${producto.descripcion}</p>
                         <p class="card-text"><strong>Precio:</strong> ${producto.precio}</p>
                     </div>

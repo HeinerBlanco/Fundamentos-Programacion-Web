@@ -1,7 +1,8 @@
 .banner{
-background-image: url(../imagenes/yeti/banneroficial.avif);
+background-image: url(../imagenes/yeti/banner3.png);
 background-size: cover;
 background-position: center;
+background-attachment: fixed;
 height: 50vh;
 
 

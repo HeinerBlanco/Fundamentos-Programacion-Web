@@ -1,0 +1,80 @@
+input{
+    width: 70%;
+    background-color: rgb(252, 251, 251);
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #050505;
+    border-radius: 5px;
+}
+
+button.agregar{
+    width: 20%;
+    height: 40px;
+    background-color: #1b5703 !important;
+    color: white;
+    border: 1px solid #050505;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+button.consulta{
+    width: 20%;
+    height: 40px;
+    background-color: #043286 !important;
+    color: white;
+    border: 1px solid #050505;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+button.borrar{
+    width: 20%;
+    height: 40px;
+    background-color: #b40707 !important;
+    color: white;
+    border: 1px solid #050505;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.seleccion{
+    padding-top: 100px;
+}
+
+#botonConsulta{
+    width: 50%;
+    height: 40px;
+    background-color: #4f09f5 !important;
+    color: white;
+    border: 1px solid #050505;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    
+}
+
+#botonBorrar{
+    width: 20%;
+    height: 40px;
+    background-color: #810606 !important;
+    color: white;
+    border: 1px solid #050505;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    button.agregar{
+        font-size: small;
+    }
+    button.consulta{
+        font-size: small;
+    }
+    button.borrar{
+font-size: small;
+height: 50px;    }
+    
+}

@@ -27,3 +27,11 @@ hr{
 .container1{
     box-shadow: inset 0 0 10px #000;
 }
+
+header{
+    margin-top: 80px;
+}
+
+footer{
+    margin-top: 80px;
+}

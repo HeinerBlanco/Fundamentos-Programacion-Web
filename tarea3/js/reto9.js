@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
   
       // Muestra el resultado en una ventana de Swal
       Swal.fire({
-        title: 'Resultado de la encuesta',
+        title: `Resultado de la encuesta <br> Para la marca <strong> ${marcaElegida} </strong>`,
         html: `<h4>Nota Obtenida: ${puntos}</h4><br>` + `<h4>Grado de satisfacción:</h4><br><h3><strong> ${puntuacion}</strong></h3>`,
         icon: 'info'
       });

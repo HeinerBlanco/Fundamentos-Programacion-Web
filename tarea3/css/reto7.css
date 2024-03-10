@@ -48,5 +48,15 @@ i {
     color: white;
     font-size: 50px;
 }
-```
+ 
+@media (max-width: 900px) {
+    i {
+        font-size: 30px;
+    }
+    img{
+        width: 450px !important;
+        height: 290px !important;
+    }
+    }
+
 

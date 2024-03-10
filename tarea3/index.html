@@ -6,14 +6,17 @@
     <link rel="icon" href="imagenes/favicon.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
+        <!-- carga de la libreria ANIMATE.CSS CDN -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+
 
     <title>INDEX</title>
   </head>
   <body>
 
-    <nav class="d-flex justify-content-center bg-success">
+    <nav class="d-flex justify-content-center bg-info fixed-top">
       <nav class="navbar navbar-expand-lg navbar-light ">
-        <a class="navbar-brand" href="index.html">INDEX</a>
+        <a class="navbar-brand" >INDEX</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -40,34 +43,29 @@
         </div>
       </nav>
 </nav>
-    <header >
+    <header class="img-fluid" >
       <h1 class="text-center display-1">Bienvenidos !</h1>
       <h2 class="display-3 text-center">Tarea #3</h2>
-      <h3 class="display-4 text-center">Retos de Programados</h3>
+      <h3 class="text-center text-info wow animate__animated animate__pulse animate__delay-1s animate__infinite">Para ver los retos <br> por favor utilizar el menu</h3>
     </header>
  
- 
- 
-    <footer class="text-center bg-success pt-3"> Derechos Reservados
+ <section>
+  <div class=" lottie text-center">
+    <lottie-player src="https://lottie.host/cd20e7d0-b6c3-42c3-8e74-6f45e0c09c8e/kdzGmv1MHN.json" background="transparent" speed="0.6" style="width: 300px; height: 300px" loop autoplay class="container animacion1 ">
+    </lottie-player>
+</div>
 
-        <script>
-            var f = new Date();
-            document.write(f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear());
-            </script>
-
-    </footer>
-    <h6 class="text-center bg-success pb-3">By Jeiner Blanco</h6>
+ </section>
+ 
+<footer class="text-center bg-info pt-2"> Derechos Reservados
+  <script>
+    var f = new Date();
+    document.write(f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear());
+  </script>
+    <h6 class="text-center  pb-3">By Jeiner Blanco</h6>
+</footer>
  
  
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
- 
- 
-    <!-- programacion LOGIN -->
-    <script src="js/reto1.js"></script>
- 
- 
-    <!-- libreria SWEETALERT-->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
  
     <!-- interactividad Lottie JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js"></script>
@@ -76,7 +74,7 @@
     <script src="https://unpkg.com/@lottiefiles/lottie-player@0.3.0/dist/lottie-player.js"></script>
  
  
-    <!-- programacion ANIMACION2 -->
+    <!-- programacion de la animacion -->
 <script>
     //seleciona un elemento del DOM con la clase CSS "animacion2" y lo allmacena en la variable anima.
     let anima = document.querySelector('.animacion2');
@@ -91,16 +89,20 @@
         autoplay: true,
         name:"Login Animation",
     }); 
-    //es la funcion xlick se llama al metodo playSegments() en la animacion,
-    //este metodo reproduce la animacion desde el fotograma 0 hasta el 150. y el segundo argumento (true) indica si la animacion se reproduce en bucle.
+    
+    
+    
     anima.addEventListener('click', function(){
         animation.playSegments([0,150], true);
     });
  
  
  </script>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+
+
+    <!-- script para que funcione correctamente el menu bootstrap -->
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
