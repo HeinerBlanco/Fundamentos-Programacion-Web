@@ -48,7 +48,6 @@ function consultarInventario() {
 
     if (accesorioSeleccionado) {
         const { nombre, cantidad, precio } = accesorioSeleccionado;
-        const subTotal = cantidad * precio;
         resultado.innerHTML = `
             <h3>Detalle del accesorio</h3>
             <p>Nombre: ${nombre}</p>
@@ -58,7 +57,16 @@ function consultarInventario() {
 
         `;
     } else {
-        resultado.textContent = 'El accesorio seleccionado no se encuentra en el inventario.';
+        Swal.fire({
+            icon: 'error',
+            title: 'Por favor Primero seleccione un accesorio del inventario',
+            showClass: {
+                popup: `animate_animated animate__bounceIn`
+            },
+            hideClass: {
+                popup: `animate_animated animate__bounceOut`
+            }
+        });
     }
 }
 
@@ -66,5 +74,9 @@ function borrar() {
     document.getElementById('nombre').value = '';
     document.getElementById('cantidad').value = '';
     document.getElementById('precio').value = '';
+    console.log("Borrado exitoso");
 }
 
+function recargarPagina() {
+    location.reload();
+}

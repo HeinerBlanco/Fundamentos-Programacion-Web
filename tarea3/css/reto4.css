@@ -35,3 +35,11 @@ header{
 footer{
     margin-top: 80px;
 }
+
+h3{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-shadow: #87be07 2px 2px 2px;
+    color: rgb(255, 0, 0);
+}

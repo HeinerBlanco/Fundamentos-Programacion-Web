@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reto #9</title>
-  <!-- Agrega los estilos de SweetAlert y Bootstrap -->
+  <!-- Agregar los estilos de SweetAlert y Bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="css/reto9.css">
   <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-  <nav class="d-flex justify-content-center">
+  <nav class="d-flex justify-content-center bg-info fixed-top">
     <nav class="navbar navbar-expand-lg navbar-light ">
         <a class="navbar-brand" href="index.html">INDEX</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,8 +41,21 @@
     </nav>
 </nav>
 
-  <h1 class="display-4 pt-5 text-center">Encuesta de Satisfacción <br>Servicio al Cliente</h1>
-  <section class="container-fluid1 d-flex flex-column align-items-center">
+
+<section class="container">
+  <div>
+    <div class=" container animacion1"></div>
+  </div>
+ </section>
+
+
+ <div>
+   <h1 class="text-center bg-info py-5">Encuesta de Satisfacción <p class="mt-5 text-white">Servicio al Cliente</p> </h1>
+   
+ </div>
+
+
+  <section class="container-fluid1 d-flex flex-column align-items-center ">
     <h2 class="mt-5 text-center">¿Cuál de estas marcas has comprado recientemente?</h2>
     
     <div class="container-fluid1">
@@ -59,16 +72,13 @@
     
   </section>
 
-  <section class="cajaEncuesta text-center d-flex justify-content-center">
+  <section class="cajaEncuesta text-center d-flex justify-content-center bg-info">
     <form id="encuesta" class="d-flex flex-column">
-      <!-- Preguntas de la encuesta -->
       <div id="preguntas" class="pt-4 d-flex align-items-start flex-column">
-        <legend>Encuesta de Satisfacción</legend>
         <div id="pregunta1">
           <legend>1. ¿Cómo calificaría la calidad del servicio recibido?</legend>
           <input type="radio" id="pregunta1_malo" value="1" name="pregunta1">
           <label for="pregunta1_malo">Malo</label>
-          <!-- Agrega las otras opciones de respuesta aquí -->
           <input type="radio" id="pregunta1_regular" value="2" name="pregunta1">
           <label for="pregunta1_regular">Regular</label>
           <input type="radio" id="pregunta1_bueno" value="3" name="pregunta1">
@@ -78,12 +88,12 @@
           <input type="radio" id="pregunta1_excelente" value="5" name="pregunta1">
           <label for="pregunta1_excelente">Excelente</label>
         </div>
-        <!-- Repite el formato para las demás preguntas -->
+        
+        
         <div id="pregunta2">
           <legend>2. ¿La atención recibida fue amable y cortés?</legend>
           <input type="radio" id="pregunta2_malo" value="1" name="pregunta2">
           <label for="pregunta2_malo">Malo</label>
-          <!-- Agrega las otras opciones de respuesta aquí -->
           <input type="radio" id="pregunta2_regular" value="2" name="pregunta2">
           <label for="pregunta2_regular">Regular</label>
           <input type="radio" id="pregunta2_bueno" value="3" name="pregunta2">
@@ -93,11 +103,12 @@
           <input type="radio" id="pregunta2_excelente" value="5" name="pregunta2">
           <label for="pregunta2_excelente">Excelente</label>
         </div>
+
+
         <div id="pregunta3">
           <legend>3. ¿Se resolvieron sus dudas de manera satisfactoria?</legend>
           <input type="radio" id="pregunta3_malo" value="1" name="pregunta3">
           <label for="pregunta3_malo">Malo</label>
-          <!-- Agrega las otras opciones de respuesta aquí -->
           <input type="radio" id="pregunta3_regular" value="2" name="pregunta3">
           <label for="pregunta3_regular">Regular</label>
           <input type="radio" id="pregunta3_bueno" value="3" name="pregunta3">
@@ -116,8 +127,41 @@
       </div>
     </form>
   </section>
-
-  <!-- Agrega el script personalizado -->
+  <footer class="text-center bg-info pt-2"> Derechos Reservados
+    <script>
+      var f = new Date();
+      document.write(f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear());
+    </script>
+      <h6 class="text-center  pb-3">By Jeiner Blanco</h6>
+  </footer>
+    <!-- interactividad Lottie JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js"></script>
+ 
+    <!-- libreria Lottie JS-->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@0.3.0/dist/lottie-player.js"></script>
+ 
+ 
+    <!-- programacion de la animacion -->
+<script>
+    //seleciona un elemento del DOM con la clase CSS "animacion2" y lo allmacena en la variable anima.
+    let anima = document.querySelector('.animacion1');
+    //carga la animacion utilizando la funcion loadAnimation de la biblioteca Bodymovin.
+    let animation = bodymovin.loadAnimation({
+        //es el contenedor donde se muesra la animacion, que es este caso es el elemento llamado anima
+        container: anima,
+        //ruta del archivo JSON que contiene la animacion.
+        path: 'https://lottie.host/b8777c7d-a776-4d34-b92a-c7bd40e386be/uOqxGCBCIp.json',
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        name:"Login Animation",
+    }); 
+    anima.addEventListener('click', function(){
+        animation.playSegments([0,50], true);
+    });
+ 
+ 
+ </script>
   <script src="js/reto9.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

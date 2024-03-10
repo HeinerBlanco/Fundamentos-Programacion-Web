@@ -16,7 +16,7 @@ window.onload = function() {
             Swal.fire({
                 title: 'Oops... Faltan datos',
                 confirmButtonText: "Intentar de nuevo",
-                html: ' <iframe src="https://lottie.host/embed/35036655-3061-46cd-bf2d-4e9bccefb40a/KcQ9a6dQnV.json"></iframe><br>"Todos los campos son obligatorios"',
+                html: '<iframe src="https://lottie.host/embed/35036655-3061-46cd-bf2d-4e9bccefb40a/KcQ9a6dQnV.json"></iframe><br>"Todos los campos son obligatorios"',
             });
             return;
         }
@@ -29,13 +29,13 @@ function mostrarImagen(estilo) {
 
     switch (estilo) {
         case "Caliente":
-            imagen = "imagenes/yeti/caliente.png";
+            imagen = "imagenes/yeti/caliente-mini.png";
             break;
         case "Frio":
-            imagen = "imagenes/yeti/fria.png";
+            imagen = "imagenes/yeti/fria-mini.png";
             break;
         case "Vino":
-            imagen = "imagenes/yeti/vino.png";
+            imagen = "imagenes/yeti/vino-mini.png";
             break;
         default:
             imagen = "imagenes/yeti/variasyeti.png"; 
@@ -46,16 +46,13 @@ function mostrarImagen(estilo) {
 }
 
 function mostrarTamano(estilo, tamano) {
-
     // variable que guarda la imagen según el estilo seleccionado
     let imagenDireccion = "imagenes/yeti/" + estilo.toLowerCase() + ".png";
 
     // Muestra el mensaje utilizando SweetAlert
     Swal.fire({
         imageUrl: imagenDireccion,
-        html: "<p> Yeti para  " + estilo + " de " + tamano + "<br><br> <strong> Precio :</strong></p> $" + obtInfo(estilo, tamano).toFixed(2),
-        
-        
+        html: "<p> Yeti para  " + estilo + " de " + tamano + "<br><br> <strong> Precio :</strong></p> $" + obtInfo(estilo, tamano).toFixed(2),     
     });
 }
 
@@ -107,19 +104,16 @@ function obtInfo(estilo, tamano) {
     return precio;
 }
 
-
 // limpiar todos los campos
-
 function limpiar() {
-        // Restablece las opciones del select de estilo
-        var selectEstilo = document.getElementById('estilo');
-        selectEstilo.selectedIndex = 0;
-    
-        // Restablece las opciones del select de tamaño
-        var selectTamano = document.getElementById('tamano');
-        selectTamano.selectedIndex = 0;
+    // Restablece las opciones del select de estilo
+    var selectEstilo = document.getElementById('estilo');
+    selectEstilo.selectedIndex = 0;
 
-        // Restablece la imagen
-        document.getElementById('imagen').src = "imagenes/yeti/variasyeti2-removebg-preview.png";
-    
+    // Restablece las opciones del select de tamaño
+    var selectTamano = document.getElementById('tamano');
+    selectTamano.selectedIndex = 0;
+
+    // Restablece la imagen
+    document.getElementById('imagen').src = "imagenes/yeti/variasyeti2-removebg-preview.png";  
 }

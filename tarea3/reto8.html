@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<nav class="d-flex justify-content-center">
+<nav class="d-flex justify-content-center bg-info fixed-top">
     <nav class="navbar navbar-expand-lg navbar-light ">
         <a class="navbar-brand" href="index.html">INDEX</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,7 +40,7 @@
     </nav>
 </nav>
 
-<section class="container bg-secondary">
+<section class="container fondo bg-info">
     <div class="row">
         <div class="col-sm-12 col-md-6 col-lg-6">
             <h1 class="text-center">Ingreso de Articulos</h1>
@@ -52,38 +52,38 @@
                 <label for="precio">Precio:</label>
                 <input type="number" id="precio">
                 <button class="agregar" type="button" onclick="agregarAccesorio();">Agregar</button>
-                <label class="mt-5 text-warning" for="seleccionarAccesorio">Seleccionar accesorio:</label>
+                <label style="font-size: 25px;" class="mt-5 text-warning " for="seleccionarAccesorio">Seleccionar accesorio:</label>
                 <select id="seleccionarAccesorio">
                     <option >Seleccione un accesorio</option>
                 </select>
                 <button class="consulta mt-5" type="button" onclick="consultarInventario();">Consultar</button>
+                <button class="borrar mt-5" type="button" onclick="recargarPagina()">Borrar Datos</button>
             </form>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-6 d-flex flex-column align-items-center justify-content-around">
-            <h1 class="text-center">Inventario</h1>
+        <div class="col-sm-12 col-md-6 col-lg-6 d-flex flex-column align-items-center mt-5 ">
+            <h1 class="text-center mt-5">Inventario</h1>
             <table class="d-flex justify-content-center " >
                 <thead >
                 </thead>
-                <tbody class="d-flex flex-column" id="resultado">
+                <tbody class="d-flex flex-column mt-5" id="resultado">
                     <tr>
                     </tr>
                 </tbody>
             </table>
-            <button class="borrar" type="button" onclick="borrar()">Borrar Datos</button>
 </div>
     </div>
 
 </section>
 
 
-<footer class="text-center  pt-3"> Derechos Reservados
+<footer class="text-center bg-info pt-2"> Derechos Reservados
     <script>
-        var f = new Date();
-        document.write(f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear());
+      var f = new Date();
+      document.write(f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear());
     </script>
-</footer>
-<h6 class="text-center  pb-3">By Jeiner Blanco</h6>
-
+      <h6 class="text-center  pb-3">By Jeiner Blanco</h6>
+  </footer>
+  
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="js/reto8.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
