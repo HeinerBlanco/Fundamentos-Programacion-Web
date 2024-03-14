@@ -49,15 +49,15 @@ h3{
     padding: 10px;
     margin: 10px;
     font-weight: bold;
-    background-color: #17a2b8 !important;
-    color: rgb(7, 7, 7);
+    background-color: #070707 !important;
+    color: rgb(253, 252, 252);
     border-radius: 15px;
 
 }
 
 
 #recomendacion:hover{
-    background-color: rgb(8, 128, 118) !important;
-    color: white;
-    box-shadow: inset 0 0 10px #000;
+    background-color: #db8018 !important;
+    color: rgb(10, 10, 10);
+    box-shadow: inset 0 0 10px #f9faf9;
 }

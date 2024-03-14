@@ -12,12 +12,10 @@ $("#a1").click(function() {
 $("#a2").click(function() {
     Swal.fire({
         title: 'Almuhadillas Diferentes Tamaños',
-        textAlign: 'right',
+        text: 'Los diferentes tamaño de almuhadillas te permiten ajustar los AirPods Pro a tus oídos. ',
         imageUrl: 'imagenes/mapa/almuhadillas.jpg',
         position: 'center',
         background: 'black',
-        confirmButtonColor: '#eea025',
-        confirmButtonText: '<i class="fa fa-thumbs-up"></i> Aceptar',
     });
 });
 
@@ -42,7 +40,6 @@ $("#a4").click(function() {
         title: 'Atención usuario',
         imageUrl: 'imagenes/mapa/volumen.jpg',
         position: 'center',
-        confirmButtonText: '<i class="fa fa-thumbs-up"></i> Aceptar',
         background: 'black',
         text: 'Puedes usar Siri con los AirPods para hacer preguntas y llamadas. Siri también puede controlar la música y comprobar el estado de los AirPods. Para configurar un AirPod Pro para usar Siri, mantén pulsado el control táctil.',
     });

@@ -51,7 +51,7 @@ function buscarProducto() {
 
     // Muestra los productos en pantalla
     let resultados = productos[searchInput];
-    for (let i = 0; i < resultados.length && i < 3; i++) {
+    for (let i = 0; i < resultados.length; i++) {
         let producto = resultados[i];
 
         // Creamos un card con la información del producto

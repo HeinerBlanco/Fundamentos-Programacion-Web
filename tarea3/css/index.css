@@ -31,23 +31,22 @@ select {
 
 
 #inactivo{
-    font-size: 20px;
+    font-size: 15px;
     color: black;
     font-weight: bold;
 
 }
-#inactivo:hover{
-    color: #460606;
-    cursor: pointer;
-}
 #activo{
-    color: rgb(32, 31, 31);
-    font-size: 15px;
+    color: rgb(34, 150, 204);
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 #inactivo:hover{
     color: #e80b0b;
     cursor: pointer;
+    font-size: 20px;
 }
 
 @media (max-width: 576px) {
