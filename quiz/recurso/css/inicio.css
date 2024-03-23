@@ -1,0 +1,79 @@
+
+
+#tituloprincipal{
+    padding-top: 150px;
+    padding-bottom: 200px;
+}
+#bienvenidos{
+    color: rgb(8, 8, 8);
+    font-size: 50px;
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+
+}
+
+.display-5{
+    color: #04B431;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.reloj{
+    background-image: url("../imagenes/reloj-min.jpg");
+    background-attachment: fixed;
+
+    
+}
+#icono{
+    width: 90px;
+}
+
+.ofertas{
+    padding: 30px 0 30px 0;
+}
+
+#rowOfertas{
+    background-color: white;
+}
+
+i{
+    font-size: 50px;
+    color: #0c0c0c;
+}
+
+#imglogo{
+    width: 300px;
+    height: 300px;
+
+}
+#divlogo{
+    display: flex;
+    justify-content: center;
+}
+#loUltimo{
+    background-color: #04B431;
+    margin: 0;
+    padding-bottom: 20px;    
+}
+#reloj{
+    width: 250px;
+    height: 250px;
+    padding: 20px 0 20px 0;
+}
+
+footer{
+    background-color: #04B431;
+}
+
+.smartwatch{
+    background-color: #04B431;
+}
+
+.marcas{
+    background-color: #04B431;
+}
+
+.carrusel2{
+    background-position: fixed;
+}

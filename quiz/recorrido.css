@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+footer{
+    background-color: #04B431;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#img360 img {
+    width: vh100;
+    height: 100vh;
+}
+ header{
+    background-color: #04B431;
+    height: 10vh;
+    width: 100%;
+
+}

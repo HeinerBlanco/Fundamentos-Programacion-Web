@@ -1,0 +1,49 @@
+body{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.banner{
+  background-image: url(../imagenes/banner_sm.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.contenido{
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+#titulo1{
+  font-size: 80px;
+  color: #04B431;
+  font-weight: bold;
+  text-align: left;
+  
+}
+#titulo2{
+  font-size: 80px;
+  color: black;
+  font-weight: bold;
+  text-align: left;
+  margin-top: -40px;
+  
+
+}
+
+#just{
+  color: #04B431;
+  font-size: 30px;
+  margin-top: -20px;
+}
+.titulo3{
+  font-size: 40px;
+  color: black;
+  text-align: center;
+  font-family: sans-serif;
+}
