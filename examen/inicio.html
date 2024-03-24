@@ -14,8 +14,13 @@
 </head>
 
 <body>
+
   <!-- Navbar que recorrer todas las paginas de la tarea -->
-  <header id="inicio">
+
+
+
+
+
 
     <nav class="navbar navbar-expand-lg navbar-light  pt-5 fixed-top ">
       <div class="container-fluid">
@@ -38,7 +43,16 @@
         </div>
       </div>
     </nav>
-  </header>
+
+
+
+
+      <header id="inicio" class="container-fluid1 d-flex align-items-center">
+<iframe src="https://www.youtube.com/embed/xiLT20w0gQw?autoplay=1&loop=1&fs=0&controls=0&disablekb=1&playlist=xiLT20w0gQw" width="1920" height="1080" title="JB Shop" frameborder="0" ></iframe>  </header>
+
+
+
+  
 
 <!-- Logo de la tienda -->
   <div id="tituloprincipal" class="container-fluid ">
@@ -332,7 +346,8 @@
 
 
 
-    <!-- interactividad SWEETALERTE-->
+    <!-- Todos los Scripts necesarios -->
+    
     <!-- libreria SWEETALERTE-->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
@@ -341,11 +356,7 @@
 
     <!-- libreria Lottie JS-->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@0.3.0/dist/lottie-player.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.3/lottie.min.js"></script> -->
-
-
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.3/lottie.min.js"></script>
     <script>
         let anima = document.querySelector(".anima");
         let animation = bodymovin.loadAnimation({
@@ -363,8 +374,23 @@
     </script>
 
 
+<!-- Script para reproducir el audio correctamente-->
+<script>
+  function reproducirAudio() {
+      var audio = document.getElementById("audio1");
+      audio.play(); // Reproducir el audio
+  }
+</script>
+
+<!-- Script para reproducir el video correctamente-->
+<script src="js/jquery.vide.js"></script>
 
 
+
+<!-- Script para bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
+
 </body>
 </html>
